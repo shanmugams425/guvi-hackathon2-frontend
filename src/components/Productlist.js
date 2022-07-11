@@ -2,13 +2,9 @@ import React, { useEffect } from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function Productlist() {
-  // useEffect( async() => {
-  //    try {
-  //        let details =  await   axios.put("http://localhost:3001/product")
-  //    } catch (error) {
 
-  //    }
-  // })
+
+  
 
   return (
     <div>
