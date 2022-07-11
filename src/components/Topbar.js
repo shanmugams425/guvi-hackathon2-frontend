@@ -1,9 +1,4 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import { BrowserRouter, Routes, Route, } from 'react-router-dom';
-
-import Home from './Home';
-import Contact from './Contactus';
-import Product from './Product'
 
 function Topbar() {
   
@@ -23,15 +18,7 @@ function Topbar() {
           </Navbar.Collapse>
           </Container>
         </Navbar>
-      <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path='/product' element={<Product></Product>}/>
-        <Route path="/contact" element={<Contact/>}/>
-      </Routes>
-      
-      </BrowserRouter>
+    
        </div>
         )
 }
