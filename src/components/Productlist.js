@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
+
 function Productlist() {
-
-
-  
 
   return (
     <div>

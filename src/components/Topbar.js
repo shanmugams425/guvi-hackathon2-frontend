@@ -5,7 +5,7 @@ import Home from './Home';
 import Contact from './Contactus';
 import Product from './Product'
 
-function Topbar() { {
+function Topbar() {
   
         return (
        <div>
@@ -34,8 +34,8 @@ function Topbar() { {
       </BrowserRouter>
        </div>
         )
-}}
-    
+}
+  
 
 
 export default Topbar;
