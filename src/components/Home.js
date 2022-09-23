@@ -1,9 +1,11 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import Topbar from "./Topbar";
 
 function Home() {
   return (
     <div>
+      <Topbar></Topbar>
       <Card className=" text-white text-center ">
         <Card.Img
           height="850px"

@@ -1,8 +1,7 @@
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 function Productlist() {
-
   return (
     <div>
       <div class="col mt-5">
@@ -16,9 +15,18 @@ function Productlist() {
             <div class="">
               <h5 class="fw-bolder">camera lens</h5>
               <div className="row">
-                <p className="col-9">7 hours &#8377;1,500</p>{" "}
-                <i className="col">
-                  <ShoppingCartIcon></ShoppingCartIcon>
+                <p className="col-12">&#8377;1,500</p>{" "}
+                <i className="col-12  m-2">
+                  <Link to={"/Rent"}>
+                    <Button variant="outline-secondary">Rent for a day</Button>{" "}
+                  </Link>
+                </i>
+                <i className="col-12  m-2">
+                  <Link to={"/Rent"}>
+                    <Button variant="outline-secondary">
+                      Rent for a Month
+                    </Button>
+                  </Link>
                 </i>
               </div>
             </div>

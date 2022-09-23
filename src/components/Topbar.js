@@ -1,7 +1,14 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Topbar() {
+  let navigate = useNavigate();
+
+  let handleLogout = () => {
+    window.localStorage.removeItem("myapptoken");
+    navigate("/");
+  };
+
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -15,7 +22,9 @@ function Topbar() {
               <Nav.Link href="contact">Contact</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="login">Login</Nav.Link>
+              <Nav.Link>
+                <button onClick={handleLogout}>Logout</button>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
