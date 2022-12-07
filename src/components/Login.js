@@ -15,7 +15,7 @@ function Login() {
     onSubmit: async (values) => {
       try {
         let loginData = await axios.post(
-          "https://versioncontrol-12.herokuapp.com/login",
+          "https://guvi-hackathon2-backend.vercel.app/login",
           values
         );
         window.localStorage.setItem("myapptoken", loginData.data.token);

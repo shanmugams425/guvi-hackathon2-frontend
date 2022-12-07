@@ -35,7 +35,7 @@ function Register() {
     onSubmit: async (values) => {
       try {
         await axios.post(
-          "https://versioncontrol-12.herokuapp.com/register",
+          "https://guvi-hackathon2-backend.vercel.app/register",
           values
         );
         navigate("/");
